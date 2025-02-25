@@ -5,4 +5,11 @@
 */
 
 // your code
-let sum
+let sum = 1;
+let count = 3;
+
+while (count < 20) {
+    sum = sum + count
+    count = count + 2
+}
+console.log(sum);
