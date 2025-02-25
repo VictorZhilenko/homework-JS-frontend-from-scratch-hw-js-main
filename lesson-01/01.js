@@ -3,3 +3,10 @@
 
 // your code
 let sum
+let count = 1;
+
+while (count <= 20) {
+    sum = sum + count
+    count = count + 1
+}
+console.log(sum);
