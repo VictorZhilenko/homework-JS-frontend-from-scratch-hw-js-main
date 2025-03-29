@@ -25,22 +25,21 @@ const next = document.querySelector('#next-button')
 
 
 let index = 0
-let numb = 0
 
 function imageSrc(index) {
     const webTechImage = document.querySelector('#web-tech-image')
-    numb = index % WEB_TECH_IMAGES.length 
-    webTechImage.src = WEB_TECH_IMAGES[Math.abs(numb)]
+    index = (index + WEB_TECH_IMAGES.length) % WEB_TECH_IMAGES.length 
+    index = Math.abs(index)
+    webTechImage.src = WEB_TECH_IMAGES[index]
 }
 
 prev.addEventListener('click', function() {
-    imageSrc(index)
     index--
-    numb--
+    imageSrc(index)
+    
 })
 
 next.addEventListener('click', function() {
-    imageSrc(index)
     index++
-    numb++
+    imageSrc(index)
 })
