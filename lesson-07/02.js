@@ -4,7 +4,7 @@
  */
 
 function isNumeric(str) {
-    const a = /^[+-]?(\d+|\.\d+|\d+\.\d*)$/
+    const a = /^[-+]?((\d*\.)?\d+(E[-+]?\d+)?)$/i
     return a.test(str)
 }
 
