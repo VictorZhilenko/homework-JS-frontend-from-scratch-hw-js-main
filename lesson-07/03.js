@@ -10,5 +10,5 @@
 */
 
 function truncate(str, maxLength) {
-  // your code
+   return str.substring(0, maxLength) + '...'
 }
